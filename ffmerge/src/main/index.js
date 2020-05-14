@@ -21,7 +21,7 @@ function createMainWindow() {
     
   }
   else {
-    window.loadURL(`http://www.elesos.com/index.php?title=FFmpeg_%E8%A7%86%E9%A2%91%E8%A3%81%E5%89%AA`)
+    window.loadURL(`http://www.elesos.com`)
    // window.loadURL(formatUrl({
     //  pathname: path.join(__dirname, 'index.html'),
     //  protocol: 'file',
