@@ -4,11 +4,13 @@
   "license": "MIT",
   "description": "cut videos and merge thme to a single file",
   "author": "admin@elesos.com",
+  "main111":"src/main/index.js",
   "scripts": {
     "dev": "electron-webpack dev",
     "compile": "electron-webpack",
     "dist": "yarn compile && electron-builder",
-    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null",
+    "start11":"electron ."
   },
   "dependencies": {
     "source-map-support": "^0.5.16"

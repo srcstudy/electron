@@ -1,27 +1,28 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\leijh\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+  C:\Program Files\nodejs\node.exe C:\Users\Ray\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
 
 PATH: 
-  C:\Users\leijh\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\leijh\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files\VisualSVN Server\bin;F:\devel\depot_tools;D:\temp\chrome\depot_tools;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\CCM;C:\Program Files\TortoiseSVN\bin;D:\env\ffmpeg\ffmpeg\bin;E:\env\ndk\android-ndk;C:\Program Files\TortoiseGit\bin;D:\env\android_sdk\platform-tools;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\MinGW\msys\1.0\bin;C:\MinGW\bin;C:\Program Files\Docker\Docker\resources\bin;D:\env\flutter\bin;C:\Program Files\VisualSVN Server\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Go\bin;C:\Users\leijh\AppData\Local\Programs\Python\Python38-32\Scripts;C:\Users\leijh\AppData\Local\Programs\Python\Python38-32;C:\Users\leijh\AppData\Local\Microsoft\WindowsApps;D:\Program Files\JetBrains\PyCharm 2019.2.2\bin;C:\Users\leijh\AppData\Local\Programs\Fiddler;C:\Program Files\JetBrains\PhpStorm 2019.2.4\bin;C:\Users\leijh\AppData\Roaming\npm;C:\Users\leijh\go\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\Ray\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Ray\bin;D:\devel\google\depot_tools;G:\devel\depot_tools;C:\Program Files (x86)\Common Files\NetSarang;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Lenovo\Access Connections;D:\devel\ffmpeg-20170711-0780ad9-win64-static\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Go\bin;C:\wamp\bin\php\php5.3.13;E:\elesos\env\ffmpeg;C:\Users\Ray\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\Ray\AppData\Local\Programs\Python\Python38;C:\Users\Ray\AppData\Roaming\npm;C:\Users\Ray\go\bin;C:\Users\Ray\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.4
 
 Node version: 
-  12.13.0
+  12.16.1
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/app-builder-bin/-/app-builder-bin-3.5.5.tgz: unexpected end of file
-      at Zlib.zlibOnError [as onerror] (zlib.js:170:17)
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\Ray\AppData\Local\Yarn\Cache\v6\npm-find-cache-dir-3.3.1-89b33fad4a4670daa94f855f7fbe31d6d84fe880-integrity\node_modules\find-cache-dir\package.json' -> 'E:\future\study\electron\ffmerge\node_modules\electron-webpack\node_modules\find-cache-dir\package.json'
 
 npm manifest: 
   {
-    "name": "electron-webpack-quick-start",
-    "version": "0.0.0",
+    "name": "ffmerge",
+    "version": "1.0.2",
     "license": "MIT",
+    "description": "cut videos and merge thme to a single file",
+    "author": "admin@elesos.com",
     "scripts": {
       "dev": "electron-webpack dev",
       "compile": "electron-webpack",
@@ -37,6 +38,7 @@ npm manifest:
       "electron-webpack": "^2.8.2",
       "webpack": "~4.42.1"
     }
+   
   }
 
 yarn manifest: 

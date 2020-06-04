@@ -41,7 +41,7 @@ function createMainWindow() {
   })
 
   return window
-}
+}//createMainWindow
 
 // quit application when all windows are closed
 app.on('window-all-closed', () => {

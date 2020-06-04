@@ -1,5 +1,6 @@
 // Modules to control application life and create native browser window
 
+// 解构赋值，从一个对象中取出若干属性
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 
@@ -17,7 +18,7 @@ function createWindow () {
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-   mainWindow.webContents.openDevTools()
+   //mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished

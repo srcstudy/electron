@@ -10,37 +10,40 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let mainWindow
 
 function createMainWindow() {
-  const window = new BrowserWindow({webPreferences: {nodeIntegration: true}})
+  const win = new BrowserWindow({webPreferences: {nodeIntegration: true}})
 
   if (isDevelopment) {
-    window.webContents.openDevTools()
+    win.webContents.openDevTools()
   }
 
   if (isDevelopment) {
-    window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
+    win.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`)
     
   }
   else {
-    window.loadURL(`http://www.elesos.com`)
-   // window.loadURL(formatUrl({
+    win.loadURL(`http://www.elesos.com`)
+   // win.loadURL(formatUrl({
     //  pathname: path.join(__dirname, 'index.html'),
     //  protocol: 'file',
     //  slashes: true
     //}))
   }
 
-  window.on('closed', () => {
+
+  win.on('resize', updateSizeInfo)
+
+  win.on('closed', () => {
     mainWindow = null
   })
 
-  window.webContents.on('devtools-opened', () => {
-    window.focus()
+  win.webContents.on('devtools-opened', () => {
+    win.focus()
     setImmediate(() => {
-      window.focus()
+      win.focus()
     })
   })
 
-  return window
+  return win
 }
 
 // quit application when all windows are closed
@@ -62,3 +65,11 @@ app.on('activate', () => {
 app.on('ready', () => {
   mainWindow = createMainWindow()
 })
+
+
+function updateSizeInfo () {
+  
+  const msg = `Size: ${mainWindow.getSize()} Position: ${mainWindow.getPosition()}`
+  console.log(msg)
+  
+}
