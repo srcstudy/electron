@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/electron/electron-quick-start#readme",
   "devDependencies": {
-    "electron": "^2.0.2"
+    "electron": "^15.5.5"
   }
 }
